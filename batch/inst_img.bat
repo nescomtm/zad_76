@@ -1,0 +1,1 @@
+npm install grunt-contrib-imagemin --save-dev

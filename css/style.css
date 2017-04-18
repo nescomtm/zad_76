@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*clearfix */
+.row:before, .row:after {
+    content: " ";
+    display: table; 
+}
+
+.row:after {
+    clear: both;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* HEADER */
+header {
+	background-color: #313234;
+	height: 50px;
+	width: 100%;
+}
+
+header > nav ul > li {
+  display: inline-block;
+}
+
+header > nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+
+header > nav ul > li > a {
+	padding: 0 20px;
+	list-style-type: none;
+	float: right;
+	line-height: 50px;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;	
+	transition:  ease-in-out .5s; 
+}
+
+header > nav ul > li > a:hover {
+	background-color: #ccc;
+	color: #00c6e0;  
+}
+
+header > nav img {
+	padding: 10px 0;
+}
+
+/* HERO */
+.hero {
+	background-image: url(https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/BR5WU8TXOA.jpg);
+	background-position: center; 
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	color: white;
+	padding: 10px;
+}
+
+.hero h3 {
+	text-transform: uppercase;
+}
+
+/* GALLERY */
+.row1 {
+    overflow: auto;
+    position: relative;
+}
+
+.col1 {
+    float: left;    
+}
+
+.gallery {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.photo {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+
+.photo:last-of-type {
+	margin-right: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* MAP */
+
+/* FOOTER END */
+.footer_end {
+	background-color: #252726;
+	color: white;
+	text-align: center;
+	height: 50px;
+	padding: 10px;
+}
+
+.footer_end a {
+	color: white; 
+	text-decoration: none;
+}
+
+.footer_end a:hover {
+	background-color: #252726;
+	color: red;
+}
+
+@media(max-width: 767px) {
+/* For mobile phones: */
+   .conatainer {
+    	width: 100%;
+    	margin: 0 auto;
+    }    
+    .m-menu {
+    	background-color: #313234;
+    	color: black;
+    	display: block;
+    	float: right;   /* bylo right */
+    	text-align: center;
+     	padding: 10px 40%;
+    }
+    .m-photo {
+    	width: 100%;
+    	float: none;
+    	padding: 10px;
+    	text-align: center;
+    }
+}
+
+/*and (max-width: 991px) - urządzenia małe (tablety), */
+@media(min-width: 768px) {
+	.m-photo {
+    	width: 100%;
+    	float: none;
+    	padding: 10px;
+    	text-align: center;
+    }  
+    .hero h3 {
+    	font-size: 22px;
+    }
+    .hero blockquote {
+    	font-size: 18px;
+    }
+} 
+
+/* - urządzenia średnie, */
+@media(min-width: 992px) and (max-width: 1199px) {
+    .m-menu {
+    	background-color: #313234;
+    	color: black;
+    }
+    .m-photo {
+    	width: 100%;
+    	float: none;
+    	padding: 10px;
+    	text-align: center;
+    }
+    .hero h3 {
+    	font-size: 28px;
+    }
+    .hero blockquote {
+    	font-size: 24px;
+    }
+} 
+
+/* - urządzenia duże (desktopy, monitory, tv). */
+@media(min-width: 1200px) {
+	.hero h3 {
+    	font-size: 28px;
+    }
+    .hero blockquote {
+    	font-size: 22px;
+    }
+    .m-photo {
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+	}	
+}
