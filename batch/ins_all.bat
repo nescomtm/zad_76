@@ -34,4 +34,3 @@ call inst_img.bat
 rem npm install grunt-contrib-imagemin --save-dev
 
 
-call inst_browsesync.bat
