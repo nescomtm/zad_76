@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/nescomtm/zad_76#readme",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
   }
 }
